@@ -446,7 +446,7 @@ def profile_manager():
         draw_text("Profiles (Enter select / N new / D delete / Esc back)", 20, 12, font=FONT_BIG)
         for i, name in enumerate(keys):
             color = (255,255,0) if i==idx else (200,200,200)
-            draw_text(f"{'> ' if i==idx else '   '}{name}", 40, 80 + i*32, color)
+            draw_text(f"{'> ' if i==idx else '   '}{name}", 40, 80 + i*32, color=color)
         pygame.display.flip()
         for ev in pygame.event.get():
             if ev.type == pygame.QUIT:
@@ -520,7 +520,7 @@ def main_menu():
         draw_text("TAB cycle modes • ENTER start • P profiles • L leaderboard • Q quit", 20, 48)
         for i, m in enumerate(MODES):
             color = (255,255,0) if i==mode_idx else (200,200,200)
-            draw_text(f"{'> ' if i==mode_idx else '   '}{m['name']}", 40, 120 + i*36, color)
+            draw_text(f"{'> ' if i==mode_idx else '   '}{m['name']}", 40, 120 + i*36, color=color)
         draw_text(f"Current profile: {current_profile_name}", 40, WIN_H-60)
         pygame.display.flip()
         for ev in pygame.event.get():
