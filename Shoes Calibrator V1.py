@@ -1,5 +1,5 @@
 """
-aim_trainer_full.py
+Shoes Calibrator V1.py
 Advanced Aim Calibrator & Trainer - Single-file program.
 
 Features:
