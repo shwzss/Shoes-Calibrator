@@ -81,7 +81,7 @@ The app helps you:
 Install Pygame with:
 
 ```bash
-pip install pygame
+pip install pygame matplotlib
 ```
 
 ---
